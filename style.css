@@ -1,0 +1,44 @@
+
+
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.barra-de-busqueda{
+    border: solid 1px #ccc;
+    border-radius: 30px;
+    width: 700px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 10px;
+    margin: 100px auto;
+    transition: all 0.3s ease-in-out;
+}
+.barra-de-busqueda:focus-within{
+    border: solid 1px #aaa;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2)
+}
+.barra-de-busqueda input[type='text']{
+    border: none;
+    outline: none;
+    padding: 10px;
+    flex: 1;
+}
+.barra-de-busqueda .acciones{
+    display: flex;
+    gap: 5px;
+}
+.barra-de-busqueda .acciones button{
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    color: #999;
+
+    transition: color 0.3s ease-in-out;
+}
+.barra-de-busqueda .acciones button:hover{
+    color: rgb(145, 186, 210);
+}
